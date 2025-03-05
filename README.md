@@ -34,21 +34,4 @@ openssl rsa -in private_key.pem -pubout -out public_key.pem
             </div>
         </li>
     </ul>
-
-    <script>
-        function copyCode(codeId) {
-            const codeElement = document.getElementById(codeId);
-            const textToCopy = codeElement.textContent;
-
-            navigator.clipboard.writeText(textToCopy)
-                .then(() => {
-                    alert("Code copied to clipboard!");
-                })
-                .catch(err => {
-                    console.error("Failed to copy: ", err);
-                    alert("Failed to copy code. Please copy manually.");
-                });
-        }
-    </script>
 </body>
-</html>
